@@ -12,7 +12,6 @@
 {% endblock %}
 
 {% block content %}
-<!--TRAINERS-->
     <div>
         <a href="{% url 'trainer-add' %}" class="btn btn-outline-primary">Add New Trainer</a><br>
         <section class="trainers-container">
@@ -23,21 +22,18 @@
                         <th>Birthdate</th>
                         <th>Location</th>
                         <th>Email</th>
-                        <th>Action</th>   
-                    </tr>
-
+                        <th>Action</th>
                     </tr>
                     {% for object in object_list %}
                     <tr>
                         <td>{{ object.birthdate }}</td>
                         <td>{{ object.location }}</td>
                         <td>{{ object.email}} </td>
-
                         <td>
-                            <a href="trainer_list/{{ object.id }}">Edit</a> |
+                            <a href="trainer_list/{{ object.id }}" >Edit</a> |
                             <a href="trainer_list/{{ object.id }}/delete" >Delete</a>
                         </td>
                     </tr>
                     {% endfor %}
     </div>
-{% endblock %}
+{% endblock %} 

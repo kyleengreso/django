@@ -16,11 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from cardquest.views import HomePageView, TrainerList, TrainerCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cardquest.urls')),
-    path('trainer_list', TrainerList.as_view(), name='trainer-list'),
-    path('trainer_list/add', TrainerCreateView.as_view(), name='trainer-add')
 ]
