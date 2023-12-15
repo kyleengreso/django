@@ -56,25 +56,26 @@
   
  /*FOOTER*/
   footer {
-    position: fixed; 
-    height: 20vh;
+    /* position: fixed; 
+    height: 20vh; */
     width: 100%;
     background-color: red;
     color: white;
     bottom: 0;
     text-align: center;
   }
+
+  main {
+    min-height: 51.3vh;
+  }
   
   /*-----------------------------HOME_PAGE---------------------------------------*/
   /*CONTENT*/
-  .home-content {
-    min-height: 100vh;
-  }
   
   /*-----------------------------TRAINER_PAGE------------------------------------*/
   /*TRAINERS*/
   .trainers-container {
-    min-height: auto;
+    /* min-height: auto; */
     border-collapse: collapse;
     margin: 1%;
     display: flex;
@@ -114,7 +115,7 @@
   
   /*-----------------------------COLLECTION_PAGE---------------------------------*/
   .collection-container {
-    min-height: auto;
+    /* min-height: auto; */
     border-collapse: collapse;
     margin: 1%;
     display: flex;
@@ -187,13 +188,13 @@
   /*-----------------------------POKEMON_CARD_PAGE-------------------------------*/
   /*CARDS*/
   .cards-container {
-    min-height: auto;
+    /* min-height: auto; */
     /* border-collapse: collapse; */
     margin: 1%;
     /* display: flex; */
     text-align: center;
     font-size: 12px;
-    padding-bottom: 160px;
+    /* padding-bottom: 160px; */
   }
   
   .card-box {
